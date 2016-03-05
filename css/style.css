@@ -195,12 +195,12 @@ a.symbol:before {
 .a-rounded{
 	margin: 0 auto;
 	display: block;
-	width: 80px;
-	height: 80px;
+	width: 250px;
+	height: 60px;
 	background: rgba(18, 194, 138, 0);
 	-moz-border-radius: 80px;
     -webkit-border-radius: 80px;
-    border-radius: 80px;
+    border-radius: 60px;
     -webkit-transition: all 0.35s ease-in-out;
    	-moz-transition: all 0.35s ease-in-out;
    	-o-transition: all 0.35s ease-in-out;

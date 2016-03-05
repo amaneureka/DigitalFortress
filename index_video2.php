@@ -222,7 +222,7 @@
 	
     </div> <!-- /map-content -->
  	
- 	<a id="bgndVideo"  data-property="{videoURL:'http://www.youtube.com/watch?v=qkfGP4UTpjE',containment:'body',autoPlay:true, mute:false, startAt:0,opacity:1,ratio:'4/3', addRaster:true}">My video</a>
+ 	<a id="bgndVideo"  data-property="{videoURL:'https://www.youtube.com/watch?v=TeV9VTCRoS0',containment:'body',autoPlay:true, mute:false, startAt:0,opacity:1,ratio:'4/3', addRaster:true}">My video</a>
  	 
 	<!-- Javascript -->
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
