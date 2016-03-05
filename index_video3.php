@@ -2,14 +2,12 @@
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]>
 <!--><html class="no-js" lang="en"><!--<![endif]-->
-
-<!-- Mirrored from www.creabox.es/themes/verde/theme/index_video3.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 05 Mar 2016 19:55:33 GMT -->
 <head>
 	<meta charset="utf-8" />
     
     <!-- Website Title & Description -->
-    <title>Verde - Minimal Coming Soon Template</title>
-    <meta name="description" content="Verde - Minimal Coming Soon Template">
+    <title>Digital Fortress : Hack your heart out!</title>
+    <meta name="description" content="Digital Fortress : Hack your heart out!">
     
     <!-- Set the viewport width to device width for mobile -->
     <meta name="viewport" content="width=device-width" />
@@ -253,6 +251,4 @@
   	<script src="styleswitcher/js/styleswitcher.js"></script>
   	
 </body>
-
-<!-- Mirrored from www.creabox.es/themes/verde/theme/index_video3.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 05 Mar 2016 19:55:34 GMT -->
 </html>
