@@ -1,0 +1,203 @@
+/* -----------------------------------------
+   TEXT EFFECTS - PART 1
+----------------------------------------- */
+
+#part1, #part2, #part2_1, #part2_2, #part3, #cookies-message{
+	-webkit-transition: all 0.65s ease-in-out;
+   	-moz-transition: all 0.65s ease-in-out;
+   	-o-transition: all 0.65s ease-in-out;
+   	-ms-transition: all 0.65s ease-in-out;
+   	transition: all 0.65s ease-in-out;
+}
+
+.fadeout_1{
+	opacity: 0;
+	animation: fadeout_1 0.65 ease-in ;
+	-webkit-animation: fadeout_1 0.65s ease-in ;
+   	-moz-animation: fadeout_1 0.65s ease-in ;
+   	-o-animation: fadeout_1 0.65s ease-in ;
+   	-ms-animation: fadeout_1 0.65s ease-in ;
+}
+
+@keyframes fadeout_1{
+	0%  {transform: translateX(0px);}
+	100% {transform: translateX(-70px);}
+}
+
+@-webkit-keyframes fadeout_1{
+	0%   {-webkit-transform: translateX(0px);}
+	100% {-webkit-transform: translateX(-70px);}
+}
+
+@-moz-keyframes fadeout_1{
+	0%   {-moz-transform: translateX(0px);}
+	100% {-moz-transform: translateX(-70px);}
+}
+
+@-o-keyframes fadeout_1{
+	0%   {-o-transform: translateX(0px);}
+	100% {-o-transform: translateX(-70px);}
+}
+
+@-ms-keyframes fadeout_1{
+	0%   {-ms-transform: translateX(0px);}
+	100% {-ms-transform: translateX(-70px);}
+}
+
+.fadein_1{
+	opacity: 1;
+	animation: fadein_1 0.65s ease-in ;
+	-webkit-animation: fadein_1 0.65s ease-in ;
+   	-moz-animation: fadein_1 0.65s ease-in ;
+   	-o-animation: fadein_1 0.65s ease-in ;
+   	-ms-animation: fadein_1 0.65s ease-in ;
+}
+
+@keyframes fadein_1{
+	0%  {transform: translateX(-70px);}
+	90% {transform: translateX(10px);}
+	100% {transform: translateX(0px);}
+}
+
+@-webkit-keyframes fadein_1{
+	0%   {-webkit-transform: translateX(-70px);}
+	90% {-webkit-transform: translateX(10px);}
+	100% {-webkit-transform: translateX(0px);}
+}
+
+@-moz-keyframes fadein_1{
+	0%   {-moz-transform: translateX(-70px);}
+	90% {-moz-transform: translateX(10px);}
+	100% {-moz-transform: translateX(0px);}
+}
+
+@-o-keyframes fadein_1{
+	0%   {-o-transform: translateX(-70px);}
+	90% {-o-transform: translateX(10px);}
+	100% {-o-transform: translateX(0px);}
+}
+
+@-ms-keyframes fadein_1{
+	0%   {-ms-transform: translateX(-70px);}
+	90% {-ms-transform: translateX(10px);}
+	100% {-ms-transform: translateX(0px);}
+}
+
+.fadeout_2{
+	opacity: 0;
+}
+
+.fadein_2{
+	opacity: 1;
+}
+
+.fadeout_3{
+	opacity: 0;
+	animation: fadeout_3 0.65 ease-in ;
+	-webkit-animation: fadeout_3 0.65s ease-in ;
+   	-moz-animation: fadeout_3 0.65s ease-in ;
+   	-o-animation: fadeout_3 0.65s ease-in ;
+   	-ms-animation: fadeout_3 0.65s ease-in ;
+}
+
+@keyframes fadeout_3{
+	0%  {transform: translateX(0px);}
+	100% {transform: translateX(70px);}
+}
+
+@-webkit-keyframes fadeout_3{
+	0%   {-webkit-transform: translateX(0px);}
+	100% {-webkit-transform: translateX(70px);}
+}
+
+@-moz-keyframes fadeout_3{
+	0%   {-moz-transform: translateX(0px);}
+	100% {-moz-transform: translateX(70px);}
+}
+
+@-o-keyframes fadeout_3{
+	0%   {-o-transform: translateX(0px);}
+	100% {-o-transform: translateX(70px);}
+}
+
+@-ms-keyframes fadeout_3{
+	0%   {-ms-transform: translateX(0px);}
+	100% {-ms-transform: translateX(70px);}
+}
+
+.fadein_3{
+	opacity: 1;
+	animation: fadein_3 0.65s ease-in ;
+	-webkit-animation: fadein_3 0.65s ease-in ;
+   	-moz-animation: fadein_3 0.65s ease-in ;
+   	-o-animation: fadein_3 0.65s ease-in ;
+   	-ms-animation: fadein_3 0.65s ease-in ;
+}
+
+@keyframes fadein_3{
+	0%  {transform: translateX(70px);}
+	90% {transform: translateX(-10px);}
+	100% {transform: translateX(0px);}
+}
+
+@-webkit-keyframes fadein_3{
+	0%   {-webkit-transform: translateX(70px);}
+	90% {-webkit-transform: translateX(-10px);}
+	100% {-webkit-transform: translateX(0px);}
+}
+
+@-moz-keyframes fadein_3{
+	0%   {-moz-transform: translateX(70px);}
+	90% {-moz-transform: translateX(-10px);}
+	100% {-moz-transform: translateX(0px);}
+}
+
+@-o-keyframes fadein_3{
+	0%   {-o-transform: translateX(70px);}
+	90% {-o-transform: translateX(-10px);}
+	100% {-o-transform: translateX(0px);}
+}
+
+@-ms-keyframes fadein_3{
+	0%   {-ms-transform: translateX(70px);}
+	90% {-ms-transform: translateX(-10px);}
+	100% {-ms-transform: translateX(0px);}
+}
+
+/* -----------------------------------------
+	TEXT EFFECTS - PART 2
+----------------------------------------- */
+
+#part4, #part5_1, #part5_2,  .fadein_5_3, .fadein_5_4, #part6{
+	-webkit-transition: all 0.85s ease-in-out;
+   	-moz-transition: all 0.85s ease-in-out;
+   	-o-transition: all 0.85s ease-in-out;
+   	-ms-transition: all 0.85s ease-in-out;
+   	transition: all 0.85s ease-in-out;
+}
+
+.fadeout_4, .fadeout_5_1, .fadeout_5_2, .fadeout_5_3, .fadeout_5_4{
+	opacity: 0;
+	-webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+	-ms-transform: scale(0.7);
+	-o-transform: scale(0.7);
+	transform: scale(0.7);
+}
+
+.fadein_4, .fadein_5_1, .fadein_5_2, .fadein_5_3, .fadein_5_4{
+	opacity: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+
+.fadeout_6{
+	opacity: 0;
+}
+
+.fadein_6{
+	opacity: 1;
+}

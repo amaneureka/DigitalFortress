@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* CSS Styleswitcher */
+
+#ut_styleswitcher {
+    
+	position: fixed;
+	
+    display: block;
+    width: 160px;
+	
+    margin:0px;
+    padding:10px;
+    
+    left:0px;
+    top:150px;
+	
+    counter-reset: steps 0;
+    z-index: 9999;
+	
+	border:1px solid #FFF;
+    background-color:#FFF;
+	
+    -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow:0px 0px 2px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+	
+	
+}
+
+#ut_styleswitcher .toggle {
+    position: absolute;	
+    width: 24px;
+    height: 24px;	
+    padding: 6px;
+    right: -47px;
+	outline: none;
+	
+	-webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow:0px 0px 2px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+
+}
+
+#ut_styleswitcher a.toggle {
+  -webkit-transition-property: background color;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-property: background color;
+  -moz-transition-duration: 0.2s;
+  -moz-transition-timing-function: ease;
+  -o-transition-property: background color;
+  -o-transition-duration: 0.2s;
+  -o-transition-timing-function: ease;
+  -ms-transition-property: background color;
+  -ms-transition-duration: 0.2s;
+  -ms-transition-timing-function: ease;
+  transition-property: background color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  text-indent:100%;
+  background: #fff url('../img/settings.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* Fonts */
+#ut_styleswitcher h1 {
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    color: #333;
+    padding: 0px;
+    line-height: 25px;
+}
+
+#ut_styleswitcher a.button-switcher {
+	display: inline-block;
+	font-weight: 300;
+	color: #333;
+	border: 1px solid #999;
+	font-size: 13px;
+    padding: 5px 10px;
+    clear: both;
+    margin-bottom: 10px;
+    -webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+
+#ut_styleswitcher a.button-switcher:hover {
+	border: 1px solid #12c28a;
+	background: #12c28a;
+	color: #fff;
+	font-weight: 400;
+}
+
+#ut_styleswitcher a.button-switcher span {
+	font-size: 12px;
+}
+
+#ut_styleswitcher p.info {
+	margin-top: -10px;
+	font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #999;
+}
