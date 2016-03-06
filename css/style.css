@@ -942,7 +942,7 @@ p.footer-social a:hover{
 	textarea, input[type="text"], input[type="text"]:hover, input[type="text"]:active,input[type="text"]:focus{
 		width: 94%;
 		margin: 0px;
-	}	
+my	}	
 	.btn{
 		font-family: 'Exo', sans-serif;
 		background: #FFF;
@@ -995,4 +995,5 @@ p.footer-social a:hover{
 	}
 
 }
+
 
