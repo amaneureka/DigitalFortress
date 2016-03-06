@@ -63,35 +63,6 @@ session_start();
     <div class="row">
     <div class="span8 offset2" id="home">
 
-<<<<<<< HEAD
-				
-				<div id="part2_2" class="fadeout_2_2">		
-					<div class="span2">
-						<a id="link-map" href="#map">CONTACT US</a>
-					</div>
-				</div>
-			
-				<div id="part3" class="fadeout_3">		
-					<div class="span2 offset2">
-						<a href="#rules" data-toggle="modal">RULES</a>
-					</div>
-				</div>
-				
-				
-				<!-- FORUM-->
-				<div id="part4" class="fadeout_2_1">		
-					<div class="span2">
-						<a href="https://www.facebook.com/DigitalFortressNSITInnovision/app/202980683107053/">FORUM</a>
-					</div>
-				</div>
-				</div>
-			</div>
-			</div> 
-		</div>
-			
-			
-	    </div>
-=======
         <div id="part1" class="fadeout_1">
             <a class="a-rounded" href="#" title=""><h2>Hack your ❤ out</h2></a>
             <h3>IEEE NSIT presents to you, Digital Fortress - The Online Hacking Event!</h3>
@@ -125,7 +96,7 @@ session_start();
                     </div>
                 </div>
                 <!-- FORUM-->
-                <div id="part3" class="fadeout_2_2">        
+                <div id="part4" class="fadeout_2_1">
                     <div class="span2">
                         <a href="https://www.facebook.com/DigitalFortressNSITInnovision/app/202980683107053/">Forum</a>
                     </div>
@@ -135,7 +106,6 @@ session_start();
             </div> 
         </div>
         </div>
->>>>>>> 22f73cf31ce648166d2bb32cf76ca7e1ded14bb7
     </div>
     </div>
                     <!-- rules-->
