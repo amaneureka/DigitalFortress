@@ -194,7 +194,7 @@ $(document).ready(function(){
 	/*	COUNTDOWN
 	/* ---------------------------------------------------------------------- */
 	var now = new Date();
-	var date = new Date('2016','2','7','15','00','00'); // new Date( year , month , day , hour , minutes , seconds)
+	var date = new Date('2016','2','7','17','00','00'); // new Date( year , month , day , hour , minutes , seconds)
 	var difference = date - now; 
 	var countTo = difference + now.valueOf();
 	$('.timer').countdown(countTo, function(event) {
