@@ -10,7 +10,8 @@ session_start();
 	<meta charset="utf-8" />
     <title>Digital Fortress : Hack your heart out!</title>
     <meta name="description" content="Digital Fortress : Hack your heart out!">
-    
+   
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <!-- Set the viewport width to device width for mobile -->
     <meta name="viewport" content="width=device-width" />
     <meta name="HandheldFriendly" content="True" />
@@ -21,7 +22,7 @@ session_start();
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicon/apple-touch-icon-114x114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicon/apple-touch-icon-72x72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/favicon/apple-touch-icon-57x57-precomposed.png">
-    <link rel="shortcut icon" href="img/favicon/favicon.png" />
+     <link rel="shortcut icon" href="img/favicon.ico">
     
     <!-- Included CSS Files -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -185,8 +186,13 @@ session_start();
 					</div>
 				</div>
 				
-				<!-- FORUM-->
 				
+				<!-- FORUM-->
+				<div id="part3" class="fadeout_2_2">		
+					<div class="span2">
+						<a href="https://www.facebook.com/DigitalFortressNSITInnovision/app/202980683107053/">Forum</a>
+					</div>
+				</div>
 				</div>
 			</div>
 			</div> 
@@ -281,7 +287,7 @@ session_start();
 			<p class="footer-social">				
 				<a href="https://www.facebook.com/ieeensit/?fref=ts" target="_blank" title="Facebook" data-gal="tooltip" data-placement="top" data-original-title="Facebook"><span class='symbol'>&#xe227;</span></a>
 				<a href="https://twitter.com/ieee_nsit"  target="_blank" title="Twitter" data-gal="tooltip" data-placement="top" data-original-title="Twitter"><span class='symbol'>&#xe286;</span></a>
-				<a href="http://ieeensit.org/" target="_blank" title="Google Plus" data-gal="tooltip" data-placement="top" data-original-title="Google Plus"><span class='symbol'>&#xe239;</span></a>
+				<a href="http://ieeensit.org/" target="_blank" title="IeeeNSIT" data-gal="tooltip" data-placement="top" data-original-title="Google Plus"><span class='symbol'>&#xe239;</span></a>
 				
 				
 			</p>
