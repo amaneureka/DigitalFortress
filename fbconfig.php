@@ -2,6 +2,8 @@
 session_start();
 
 require_once 'autoload.php';
+require_once 'connection.php';
+
 use Facebook\FacebookSession;
 use Facebook\FacebookRedirectLoginHelper;
 use Facebook\FacebookRequest;
@@ -35,8 +37,21 @@ if (isset($session)) {
 	$_SESSION['FBID'] = $fbid;           
     $_SESSION['FULLNAME'] = $fbfullname;
     $_SESSION['EMAIL'] =  $femail;
-    /* ---- header location after session ----*/
-    header("Location: landing.php");
+
+    db_connection();
+    $result = db_query("SELECT * FROM users WHERE fbid='" . $fbid . "';");
+
+    if (!mysqli_num_rows($result))
+    {
+        /* New User */
+        db_query("INSERT INTO users VALUES(NULL, '" . $fbfullname . "', '" . $fbid . "', '" . $femail . "', 'NULL', 0);");
+
+        //swagat karo user kar :D !
+        header("Location: landing.php?welcome");
+    }
+    else
+        header("Location: landing.php");
+    
 } else {
   $loginUrl = $helper->getLoginUrl();
     header("Location: ".$loginUrl);

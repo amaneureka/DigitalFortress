@@ -1,5 +1,6 @@
 <?php
-session_start(); 
+
+session_start();
 ?>
 <!DOCTYPE html>
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
@@ -192,7 +193,7 @@ session_start();
 	</div>
     </div> <!-- /map-content -->
      
-     <a id="bgndVideo"  data-property="{videoURL:'#',containment:'body',autoPlay:true, mute:false, startAt:0,opacity:1,ratio:'4/3', addRaster:true}">My video</a>
+     <a id="bgndVideo"  data-property="{videoURL:'https://www.youtube.com/watch?v=TeV9VTCRoS0',containment:'body',autoPlay:true, mute:false, startAt:0,opacity:1,ratio:'4/3', addRaster:true}">My video</a>
       
     <!-- Javascript -->
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
