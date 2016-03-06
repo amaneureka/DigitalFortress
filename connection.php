@@ -9,7 +9,7 @@ $connection = NULL;
 
 function db_query($query)
 {
-    global $connection;
+    global $connection;    
     return mysqli_query($connection, $query);
 }
 
