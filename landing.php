@@ -188,9 +188,9 @@ session_start();
 				
 				
 				<!-- FORUM-->
-				<div id="part3" class="fadeout_2_2">		
+				<div id="part4" class="fadeout_2_1">		
 					<div class="span2">
-						<a href="https://www.facebook.com/DigitalFortressNSITInnovision/app/202980683107053/">Forum</a>
+						<a href="https://www.facebook.com/DigitalFortressNSITInnovision/app/202980683107053/">FORUM</a>
 					</div>
 				</div>
 				</div>
