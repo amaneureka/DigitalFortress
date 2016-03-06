@@ -287,7 +287,7 @@ session_start();
 			<p class="footer-social">				
 				<a href="https://www.facebook.com/ieeensit/?fref=ts" target="_blank" title="Facebook" data-gal="tooltip" data-placement="top" data-original-title="Facebook"><span class='symbol'>&#xe227;</span></a>
 				<a href="https://twitter.com/ieee_nsit"  target="_blank" title="Twitter" data-gal="tooltip" data-placement="top" data-original-title="Twitter"><span class='symbol'>&#xe286;</span></a>
-				<a href="http://ieeensit.org/" target="_blank" title="IeeeNSIT" data-gal="tooltip" data-placement="top" data-original-title="Google Plus"><span class='symbol'>&#xe239;</span></a>
+				<a href="http://ieeensit.org/" target="_blank" title="IeeeNSIT" data-gal="tooltip" data-placement="top" data-original-title="Google Plus"><span class='symbol'>&#xe231;</span></a>
 				
 				
 			</p>
