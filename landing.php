@@ -156,7 +156,7 @@ session_start();
 				<!-- @prerna: Login form will go here, also remove the below subscriber's form -->
 				<div id="part2_1" class="fadeout_2_1">
 					<div class="span2 offset2">
-						<a href="#myModal" id="meetus" data-toggle="modal">LOGIN</a>
+						<a href="#myModal"  data-toggle="modal">LOGIN</a>
 			       
 				</div>
 				</div>
@@ -168,6 +168,14 @@ session_start();
 						<a id="link-map" href="#map">CONTACT US</a>
 					</div>
 				</div>
+			
+				<div id="part3" class="fadeout_3">		
+					<div class="span2 offset2">
+						<a href="#rules" data-toggle="modal">RULES</a>
+					</div>
+				</div>
+				
+				<!-- FORUM-->
 				
 				</div>
 			</div>
@@ -193,6 +201,29 @@ session_start();
 			</div>
 			
 		</div>
+			    	<!-- rules-->
+		<div id="rules" class="modal hide fade meet-us" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-header">
+				<a href="#" class="close" data-dismiss="modal" aria-hidden="true"><img class="close-1" src="img/team/close2.png" alt="Close" /><img class="close-2" src="img/team/close1.png" alt="Close" /></a>
+			</div>
+			<div class="modal-body">
+				<h2 id="myModalLabel" class="meet-us-title">Rules</h2>
+				
+				<p>1.This event consists of various levels of varying difficulty. You are supposed to solve each level step by step and proceed to next level for which you need answer for the current level. The participant who finishes the game earliest or who reaches up to the highest level till the game is closed, will be declared as winner.</br>
+				2.This is an event for individual and Playing in groups is not allowed. The persons attempting to do so will be disqualified from the game.</br>
+				3.No spoilers will be entertained. Posting an answer (or anything close to it) on the forum is not allowed, anyone attempting to do so will be banned from the game.</br>
+				4.Do not share the answers on personal blogs/websites or other forums. It is quite possible that the other person may finish before you. And if found sharing the answers to other competitors he/she may be banned from the event.</br>
+				5.Anybody can play this game but participants having a valid college and school ID only are entitled for Prizes.</br>
+				6.In case of any conflict or situation of ambiguity, decision taken by the organizing committee will be final.</br>
+				7.Unethical activities wont be entertained.
+				</p>
+
+				
+			</div>
+			
+		</div>
+    	
+
     
     <div class="map-content">
     

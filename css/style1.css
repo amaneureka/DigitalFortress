@@ -2,8 +2,9 @@
    TEXT EFFECTS - PART 1
 ----------------------------------------- */
 
-#part1, #part2, #part2_1, #part2_2, #part3, #cookies-message{
+#part1, #part2, #part2_1, #part2_2, #part2_3,#part3, #cookies-message{
 	-webkit-transition: all 0.65s ease-in-out;
+	
    	-moz-transition: all 0.65s ease-in-out;
    	-o-transition: all 0.65s ease-in-out;
    	-ms-transition: all 0.65s ease-in-out;
