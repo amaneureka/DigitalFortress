@@ -10,7 +10,8 @@ session_start();
     <meta charset="utf-8" />
     <title>Digital Fortress : Hack your heart out!</title>
     <meta name="description" content="Digital Fortress : Hack your heart out!">
-    
+   
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <!-- Set the viewport width to device width for mobile -->
     <meta name="viewport" content="width=device-width" />
     <meta name="HandheldFriendly" content="True" />
@@ -21,7 +22,7 @@ session_start();
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicon/apple-touch-icon-114x114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicon/apple-touch-icon-72x72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/favicon/apple-touch-icon-57x57-precomposed.png">
-    <link rel="shortcut icon" href="img/favicon/favicon.png" />
+     <link rel="shortcut icon" href="img/favicon.ico">
     
     <!-- Included CSS Files -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -61,7 +62,7 @@ session_start();
     <div class="container">
     <div class="row">
     <div class="span8 offset2" id="home">
-    
+
         <div id="part1" class="fadeout_1">
             <a class="a-rounded" href="#" title=""><h2>Hack your ❤ out</h2></a>
             <h3>IEEE NSIT presents to you, Digital Fortress - The Online Hacking Event!</h3>
@@ -95,12 +96,15 @@ session_start();
                     </div>
                 </div>
                 <!-- FORUM-->
+                <div id="part3" class="fadeout_2_2">        
+                    <div class="span2">
+                        <a href="https://www.facebook.com/DigitalFortressNSITInnovision/app/202980683107053/">Forum</a>
+                    </div>
+                </div>
                 </div>
             </div>
             </div> 
         </div>
-            
-            
         </div>
     </div>
     </div>
@@ -165,25 +169,24 @@ session_start();
     
     <div class="footer">
     <div id="part6">
-    <div class="container">
-        <div class="span12 back-to-top">
-            <a href="#home" id="home-top"><img class="back-to-top-1" src="img/back-to-top.png" alt="Go back to top" /><img class="back-to-top-2" src="img/back-to-top-hover.png" alt="Go back to top" /></a>
-        </div>
-        <div class="row">
-            <div class="span12">
-            <p class="footer-social">                
-                <a href="https://www.facebook.com/ieeensit/?fref=ts" target="_blank" title="Facebook" data-gal="tooltip" data-placement="top" data-original-title="Facebook"><span class='symbol'>&#xe227;</span></a>
-                <a href="https://twitter.com/ieee_nsit"  target="_blank" title="Twitter" data-gal="tooltip" data-placement="top" data-original-title="Twitter"><span class='symbol'>&#xe286;</span></a>
-                <a href="http://ieeensit.org/" target="_blank" title="Google Plus" data-gal="tooltip" data-placement="top" data-original-title="Google Plus"><span class='symbol'>&#xe239;</span></a>
-                
-                
-            </p>
-            </div>
-        </div>
-    </div>
-    </div>
-    </div>
-    
+	<div class="container">
+		<div class="span12 back-to-top">
+			<a href="#home" id="home-top"><img class="back-to-top-1" src="img/back-to-top.png" alt="Go back to top" /><img class="back-to-top-2" src="img/back-to-top-hover.png" alt="Go back to top" /></a>
+		</div>
+		<div class="row">
+			<div class="span12">
+			<p class="footer-social">				
+				<a href="https://www.facebook.com/ieeensit/?fref=ts" target="_blank" title="Facebook" data-gal="tooltip" data-placement="top" data-original-title="Facebook"><span class='symbol'>&#xe227;</span></a>
+				<a href="https://twitter.com/ieee_nsit"  target="_blank" title="Twitter" data-gal="tooltip" data-placement="top" data-original-title="Twitter"><span class='symbol'>&#xe286;</span></a>
+				<a href="http://ieeensit.org/" target="_blank" title="IeeeNSIT" data-gal="tooltip" data-placement="top" data-original-title="Google Plus"><span class='symbol'>&#xe231;</span></a>
+				
+				
+			</p>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
     </div> <!-- /map-content -->
      
      <a id="bgndVideo"  data-property="{videoURL:'https://www.youtube.com/watch?v=TeV9VTCRoS0',containment:'body',autoPlay:true, mute:false, startAt:0,opacity:1,ratio:'4/3', addRaster:true}">My video</a>
