@@ -1,3 +1,6 @@
+<?php
+session_start(); 
+?>
 <!DOCTYPE html>
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]>
@@ -31,7 +34,87 @@
     <link rel="stylesheet" href="styleswitcher/css/styleswitcher.css" /> 
 </head>
 <body>
-	
+	<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1555553761440354',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<script>
+  
+  function statusChangeCallback(response) {
+    console.log('statusChangeCallback');
+    console.log(response);
+   
+    if (response.status === 'connected') {
+      
+      testAPI();
+    } else if (response.status === 'not_authorized') {
+      
+      document.getElementById('status').innerHTML = 'Please log ' +
+        'into this app.';
+    } else {
+      
+      document.getElementById('status').innerHTML = 'Please log ' +
+        'into Facebook.';
+    }
+  }
+
+  
+  function checkLoginState() {
+    FB.getLoginStatus(function(response) {
+      statusChangeCallback(response);
+    });
+  }
+
+  window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '1555553761440354',
+    cookie     : true,  // enable cookies to allow the server to access 
+                        // the session
+    xfbml      : true,  // parse social plugins on this page
+    version    : 'v2.5' // use graph api version 2.5
+  });
+
+  
+
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+
+  };
+
+  // Load the SDK asynchronously
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+  
+  function testAPI() {
+    console.log('Welcome!  Fetching your information.... ');
+    FB.api('/me', function(response) {
+      console.log('Successful login for: ' + response.name);
+      document.getElementById('status').innerHTML =
+        'Thanks for logging in, ' + response.name + '!';
+    });
+  }
+</script>
+
 	<div id="ut_styleswitcher">
 		<div style="position: relative;">
             <a href="#" class="toggle"></a>
@@ -73,9 +156,12 @@
 				<!-- @prerna: Login form will go here, also remove the below subscriber's form -->
 				<div id="part2_1" class="fadeout_2_1">
 					<div class="span2 offset2">
-						<a href="#myModal" id="meetus" data-toggle="modal">MEET US</a>
-					</div>
+						<a href="#myModal" id="meetus" data-toggle="modal">LOGIN</a>
+			       
 				</div>
+				</div>
+		
+
 				
 				<div id="part2_2" class="fadeout_2_2">		
 					<div class="span2">
@@ -88,24 +174,25 @@
 			</div> 
 		</div>
 			
-		<div id="part3" class="fadeout_3">
-			<div class="singup" >
-				<div class="subscribe-mailchimp">
-                    <p>Sign up now to our newsletter and you'll be one of the first to know the new site:</p>
-					<div id="mc_embed_signup">
-						<form id="mc-form">
-					        <input id="mc-email" type="email" placeholder="email" class="email">
-					        <button type="submit" class="btn"><span class="singup-image" ><img src="img/send.png" alt="send email" /></span><span class="singup-text">Send</span></button>
-					        <label for="mc-email"></label>
-					    </form>
-					</div>
-                </div>
-			</div>
-		</div>
-		
+			
 	    </div>
     </div>
     </div>
+			    	<!-- Modal -->
+		<div id="myModal" class="modal hide fade meet-us" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-header">
+				<a href="#" class="close" data-dismiss="modal" aria-hidden="true"><img class="close-1" src="img/team/close2.png" alt="Close" /><img class="close-2" src="img/team/close1.png" alt="Close" /></a>
+			</div>
+			<div class="modal-body">
+				<h2 id="myModalLabel" class="meet-us-title">LOGIN TO CONTINUE!</h2>
+				
+				<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+</fb:login-button>
+
+				
+			</div>
+			
+		</div>
     
     <div class="map-content">
     
@@ -119,7 +206,7 @@
 		
 		<div id="part4">
             <h2>CONTACT US</h2>
-            <h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h4>
+            <h4>Doubts and Suggestions are welcome</h4>
         </div>
             <form action="#" id="contactform">
                 <p id="part5_1">
@@ -185,7 +272,7 @@
     <script type="text/javascript" src="js/scripts.js"></script>
     <script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>
     <script type="text/javascript" src="js/video_youtube.js"></script>
-  	
+
   	<!-- DEMO Switcher
   	================================================== -->
   	<script src="styleswitcher/js/styleswitcher.js"></script>

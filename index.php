@@ -67,8 +67,8 @@
     <div class="span8 offset2" id="home">
     
     	<div id="part1" class="fadeout_1">
-	        <a class="a-rounded" href="#" title=""><h1>V</h1></a>
-	        <h3>Verde is coming soon! It will bring a lot of new features. It will return in:</h3>
+	        <a class="a-rounded" href="#" title=""><h1>DF</h1></a>
+	        <h3>Digital Fortress is coming soon!Lot better and with bigger prize money this time  . It will return in:</h3>
 	        <p class="timer">
 	          	<span class="days"></span><span class="daysText"></span><span class="separate">/</span> 
 	          	<span class="hours"></span><span class="hoursText"></span><span class="separate">/</span>
