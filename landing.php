@@ -238,16 +238,11 @@ session_start();
 		<div class="row">
 			<div class="span12">
 			<p class="footer-social">				
-				<a href="#" title="Facebook" data-gal="tooltip" data-placement="top" data-original-title="Facebook"><span class='symbol'>&#xe227;</span></a>
-				<a href="#" title="Twitter" data-gal="tooltip" data-placement="top" data-original-title="Twitter"><span class='symbol'>&#xe286;</span></a>
-				<a href="#" title="Pinterest" data-gal="tooltip" data-placement="top" data-original-title="Pinterest"><span class='symbol'>&#xe264;</span></a>
-				<a href="#" title="Skype" data-gal="tooltip" data-placement="top" data-original-title="Skype"><span class='symbol'>&#xe274;</span></a>
-				<a href="#" title="Flickr" data-gal="tooltip" data-placement="top" data-original-title="Flickr"><span class='symbol'>&#xe229;</span></a>
-				<a href="#" title="Google Plus" data-gal="tooltip" data-placement="top" data-original-title="Google Plus"><span class='symbol'>&#xe239;</span></a>
-				<a href="#" title="Picassa" data-gal="tooltip" data-placement="top" data-original-title="Picassa"><span class='symbol'>&#xe263;</span></a>
-				<a href="#" title="Linkedin" data-gal="tooltip" data-placement="top" data-original-title="Linkedin"><span class='symbol'>&#xe252;</span></a>
-				<a href="#" title="Youtube" data-gal="tooltip" data-placement="top" data-original-title="Youtube"><span class='symbol'>&#xe299;</span></a>
-				<a href="#" title="Instagram" data-gal="tooltip" data-placement="top" data-original-title="Instagram"><span class='symbol'>&#xe300;</span></a>
+				<a href="https://www.facebook.com/ieeensit/?fref=ts" target="_blank" title="Facebook" data-gal="tooltip" data-placement="top" data-original-title="Facebook"><span class='symbol'>&#xe227;</span></a>
+				<a href="https://twitter.com/ieee_nsit"  target="_blank" title="Twitter" data-gal="tooltip" data-placement="top" data-original-title="Twitter"><span class='symbol'>&#xe286;</span></a>
+				<a href="http://ieeensit.org/" target="_blank" title="Google Plus" data-gal="tooltip" data-placement="top" data-original-title="Google Plus"><span class='symbol'>&#xe239;</span></a>
+				
+				
 			</p>
 			</div>
 		</div>
