@@ -78,29 +78,32 @@ session_start();
             <div class="row">
             <div class="span8 links">
                 <div class="row">
-                <div id="part2_1" class="fadeout_2_1">
-                    <div class="span2 offset2">
-                        <?php if (!$_SESSION['FBID']): ?> 
-                        <a href="fbconfig.php">LOGIN</a>
-                        <?php endif ?> 
+                    <div id="part2" class="fadeout_2_1">
+                        <div class="span2 offset2">
+                            <?php if (!$_SESSION['FBID']): ?> 
+                                <a href="fbconfig.php">LOGIN</a>
+                            <?php else: ?> 
+                                <a href="logout.php">LOGOUT</a>
+                            <?php endif ?> 
+                        </div>
+                    </div>
+                    <div id="part2" class="fadeout_2_2">        
+                        <div class="span2">
+                            <a id="link-map" href="#map">CONTACT US</a>
+                        </div>
                     </div>
                 </div>
-                <div id="part2_2" class="fadeout_2_2">        
-                    <div class="span2">
-                        <a id="link-map" href="#map">CONTACT US</a>
+                <div class="row">
+                    <div id="part3" class="fadeout_2_1">        
+                        <div class="span2 offset2">
+                            <a href="#rules" data-toggle="modal">RULES</a>
+                        </div>
                     </div>
-                </div>
-                <div id="part3" class="fadeout_3">        
-                    <div class="span2 offset2">
-                        <a href="#rules" data-toggle="modal">RULES</a>
+                    <div id="part4" class="fadeout_2_2">
+                        <div class="span2">
+                            <a href="https://www.facebook.com/DigitalFortressNSITInnovision/app/202980683107053/">Forum</a>
+                        </div>
                     </div>
-                </div>
-                <!-- FORUM-->
-                <div id="part4" class="fadeout_2_1">
-                    <div class="span2">
-                        <a href="https://www.facebook.com/DigitalFortressNSITInnovision/app/202980683107053/">Forum</a>
-                    </div>
-                </div>
                 </div>
             </div>
             </div> 
@@ -189,7 +192,7 @@ session_start();
 	</div>
     </div> <!-- /map-content -->
      
-     <a id="bgndVideo"  data-property="{videoURL:'https://www.youtube.com/watch?v=TeV9VTCRoS0',containment:'body',autoPlay:true, mute:false, startAt:0,opacity:1,ratio:'4/3', addRaster:true}">My video</a>
+     <a id="bgndVideo"  data-property="{videoURL:'#',containment:'body',autoPlay:true, mute:false, startAt:0,opacity:1,ratio:'4/3', addRaster:true}">My video</a>
       
     <!-- Javascript -->
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
