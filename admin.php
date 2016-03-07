@@ -7,7 +7,7 @@
 		if ($function == "drop")
 		{
 			db_connection();
-			var_dump(db_query("DROP TABLE IF EXISTS `users`"));
+			//var_dump(db_query("DROP TABLE IF EXISTS `users`"));
 		}
 	}
 ?>

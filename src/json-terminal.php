@@ -70,6 +70,10 @@ class DigitalFortress
         }
         else if ($level == 5)
             return ("Sometimes passwords are saved in plain text on server without your knowledge. Search engine won't able to help you :)");
+        else if ($level == 6)
+            return ("You are trying to get access of your friend's computer, It says please enter 10 digit password");
+        else if ($level == 7)
+            return ("You are trying to gain access into pentagon network, but seems like they have password key encrpted several times\nPassword: /question/tmp7546789.txt \nHint: Password contains only digits!");
         else
             return ("We are in progress of cooking more questions for you!");
     }
@@ -113,6 +117,24 @@ class DigitalFortress
             if ($answer == "6160fe2b34fdb6")
             {
                 db_query("UPDATE users SET lvl=6,score=210 WHERE fbid='" . $_SESSION['FBID'] . "'");
+                return ("true");
+            }
+            throw new Exception("Wrong Answer!");       
+        }
+        else if ($level == 6)
+        {
+            if (strlen($answer) > 10)
+            {
+                db_query("UPDATE users SET lvl=7,score=280 WHERE fbid='" . $_SESSION['FBID'] . "'");
+                return ("Correct! You exploited a buffer overflow.");
+            }
+            throw new Exception("Wrong Answer!");       
+        }
+        else if ($level == 7)
+        {
+            if ($answer == "9871")
+            {
+                db_query("UPDATE users SET lvl=8,score=360 WHERE fbid='" . $_SESSION['FBID'] . "'");
                 return ("true");
             }
             throw new Exception("Wrong Answer!");       

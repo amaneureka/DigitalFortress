@@ -1,7 +1,9 @@
 <?php
 session_start();
+require_once 'connection.php';
+
 if (!$_SESSION['FBID'])
-    header("location index.php");
+    header("Location: index.php");
 if ($_SESSION['FBID'] && isset($_GET['answer']))
 {
     db_connection();
@@ -111,7 +113,14 @@ if ($_SESSION['FBID'] && isset($_GET['answer']))
   	<script src="styleswitcher/js/styleswitcher.js"></script>
     <script src="js/jquery.terminal-0.9.3.min.js"></script>
     <script src="js/jquery.mousewheel-min.js"></script>
-
+    <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+          ga('create', 'UA-74754564-1', 'auto');
+          ga('send', 'pageview');
+    </script>
     <script>
         jQuery(document).ready(function($) {
             $('#terminal').terminal("src/json-terminal.php", {
