@@ -47,7 +47,7 @@ session_start();
                 <p class="info">Hi Guest! </p>
             <?php endif ?>
             <p>
-             <a class="button-switcher" href="#">Terminal</a>
+             <a class="button-switcher" href="terminal.php">Terminal</a>
              <a class="button-switcher" href="leaderboard.php">Leaderboard</a>
              </p>
             

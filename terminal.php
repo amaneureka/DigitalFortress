@@ -1,6 +1,5 @@
 <?php
 session_start();
-require_once 'connection.php';
 ?>
 <!DOCTYPE html>
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
@@ -37,7 +36,7 @@ require_once 'connection.php';
     <link href='http://fonts.googleapis.com/css?family=Exo:100,200,300,400,600,700,800,900,200italic,300italic,400italic' rel='stylesheet' type='text/css'>
     
     <link rel="stylesheet" href="styleswitcher/css/styleswitcher.css" /> 
-    
+    <link href="css/jquery.terminal-0.9.3.css" rel="stylesheet"/>
 </head>
 <body>
 	
@@ -70,37 +69,10 @@ require_once 'connection.php';
     
     <div class="container">
     <div class="row">
-    <div class="span8 offset2" id="home">
-    	<div id="part1" class="fadeout_1">
-	        <h2>Leaderboard</h2>
-	        <table class="tableSection">
-    			<thead>
-        			<tr>
-            			<th><span class="text">Rank</span></th>
-            			<th><span class="text">Name</span></th>
-            			<th><span class="text">Score</span></th>
-        			</tr>
-    			</thead>
-    			<tbody>
-    				<?php
-    					db_connection();
-    					$result = db_query("SELECT * FROM users ORDER BY score DESC");
-    					if (mysqli_num_rows($result))
-    					{
-    						$rank = 0;
-    						while($row = mysqli_fetch_array($result,MYSQLI_ASSOC))
-    						{
-    							++$rank;
-    							echo "<tr>";
-    							echo "<td>" . $rank . "</td>";
-    							echo "<td>" . $row['name'] . "</td>";
-    							echo "<td>" . $row['score'] . "</td>";
-    							echo "</tr>";
-    						}
-    					}
-    				?>
-    			</tbody>
-			</table>
+    <div class="span8 offset2" id="home2">
+    	<div id="part1" class="fadeout_1" style="width: 500px; height: 230px;">
+	        <h2 style="text-align: center;">Terminal</h2>
+	        <div id="terminal" ></div>
 	    </div>
 	    </div>
     </div>
@@ -117,6 +89,16 @@ require_once 'connection.php';
     <script type="text/javascript" src="js/fss.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
     <script type="text/javascript" src="js/canvas.js"></script>
-  	<script src="styleswitcher/js/styleswitcher.js"></script>  	
+  	<script src="styleswitcher/js/styleswitcher.js"></script>
+    <script src="js/jquery.terminal-0.9.3.min.js"></script>
+    <script src="js/jquery.mousewheel-min.js"></script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            $('#terminal').terminal("src/json-terminal.php", {
+                greetings: "Welcome!"
+            });
+        });
+    </script>
 </body>
 </html>

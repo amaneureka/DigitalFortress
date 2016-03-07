@@ -192,6 +192,12 @@ a.symbol:before {
 	text-shadow: 0px 0px 6px #333;
 }
 
+#home2{
+	position: absolute;
+	z-index: 10;
+	text-shadow: 0px 0px 6px #333;
+}
+
 .a-rounded{
 	margin: 0 auto;
 	display: block;
@@ -425,21 +431,6 @@ input[type="email"], input[type="email"]:focus, input[type="email"]:hover, input
 	color: #12c28a;
 	font-weight: 600;
 }
-
-.error-message{
-	margin: -10px 0 15px 0;
-	color: #f32626;
-	font-weight: 600;
-}
-
-.valid, .error{
-	margin-top: 15px;
-	font-size: 16px;
-	font-weight: 600;
-}
-
-.valid{color: #12c28a;}
-.error{color: #f32626;}
 
 /* -----------------------------------------
    MEET US
