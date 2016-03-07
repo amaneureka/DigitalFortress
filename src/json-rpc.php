@@ -249,7 +249,7 @@ function handle_json_rpc($object) {
             echo json_encode(service_description($object));
         } else if (!in_array($method, $methods) && !in_array("__call", $methods)) {
             // __call will be called for any method that's missing
-            $msg = "Procedure `" . $method . "' not found";
+            $msg = "unknown Command `" . $method . "'";
             throw new JsonRpcExeption(104, $msg);
         } else {
             if (in_array("__call", $methods) && !in_array($method, $methods)) {

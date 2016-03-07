@@ -44,7 +44,7 @@ if (isset($session)) {
     if (!mysqli_num_rows($result))
     {
         /* New User */
-        db_query("INSERT INTO users VALUES(NULL, '" . $fbfullname . "', '" . $fbid . "', '" . $femail . "', 'NULL', 0);");
+        db_query("INSERT INTO users VALUES(NULL, '" . $fbfullname . "', '" . $fbid . "', '" . $femail . "', 'NULL', 0, 0);");
 
         //swagat karo user kar :D !
         header("Location: landing.php?welcome");

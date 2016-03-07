@@ -35,6 +35,7 @@ function db_create()
             emailid char(255) NOT NULL,
             innoid char(10) NOT NULL,
             score int(100) NOT NULL,
+            lvl int(10) NOT NULL,
             PRIMARY KEY (user_id) );";
     if(db_query($query)){
         //do nothing

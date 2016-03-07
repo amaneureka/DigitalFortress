@@ -96,7 +96,7 @@ session_start();
     <script>
         jQuery(document).ready(function($) {
             $('#terminal').terminal("src/json-terminal.php", {
-                greetings: "Welcome!"
+                greetings: "Digital Fortress (c) 2016 Innovision NSIT. All rights reserved."
             });
         });
     </script>
