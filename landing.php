@@ -79,7 +79,7 @@ session_start();
             <div class="row">
             <div class="span8 links">
                 <div class="row">
-                    <div id="part2" class="fadeout_2_1">
+                    <div id="part2_1" class="fadeout_2_1">
                         <div class="span2 offset2">
                             <?php if (!$_SESSION['FBID']): ?> 
                                 <a href="fbconfig.php">LOGIN</a>
@@ -88,7 +88,7 @@ session_start();
                             <?php endif ?> 
                         </div>
                     </div>
-                    <div id="part2" class="fadeout_2_2">        
+                    <div id="part2_2" class="fadeout_2_2">        
                         <div class="span2">
                             <a id="link-map" href="#map">CONTACT US</a>
                         </div>
