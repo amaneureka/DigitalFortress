@@ -1,5 +1,6 @@
 <?php
-session_start(); 
+
+session_start();
 ?>
 <!DOCTYPE html>
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
@@ -46,8 +47,8 @@ session_start();
                 <p class="info">Hi Guest! </p>
             <?php endif ?>
             <p>
-             <a class="button-switcher" href="#">Terminal</a>
-             <a class="button-switcher" href="#">Leaderboard</a>
+             <a class="button-switcher" href="terminal.php">Terminal</a>
+             <a class="button-switcher" href="leaderboard.php">Leaderboard</a>
              </p>
             
         </div>
@@ -78,29 +79,32 @@ session_start();
             <div class="row">
             <div class="span8 links">
                 <div class="row">
-                <div id="part2_1" class="fadeout_2_1">
-                    <div class="span2 offset2">
-                        <?php if (!$_SESSION['FBID']): ?> 
-                        <a href="fbconfig.php">LOGIN</a>
-                        <?php endif ?> 
+                    <div id="part2" class="fadeout_2_1">
+                        <div class="span2 offset2">
+                            <?php if (!$_SESSION['FBID']): ?> 
+                                <a href="fbconfig.php">LOGIN</a>
+                            <?php else: ?> 
+                                <a href="logout.php">LOGOUT</a>
+                            <?php endif ?> 
+                        </div>
+                    </div>
+                    <div id="part2" class="fadeout_2_2">        
+                        <div class="span2">
+                            <a id="link-map" href="#map">CONTACT US</a>
+                        </div>
                     </div>
                 </div>
-                <div id="part2_2" class="fadeout_2_2">        
-                    <div class="span2">
-                        <a id="link-map" href="#map">CONTACT US</a>
+                <div class="row">
+                    <div id="part3" class="fadeout_2_1">        
+                        <div class="span2 offset2">
+                            <a href="#rules" data-toggle="modal">RULES</a>
+                        </div>
                     </div>
-                </div>
-                <div id="part3" class="fadeout_3">        
-                    <div class="span2 offset2">
-                        <a href="#rules" data-toggle="modal">RULES</a>
+                    <div id="part4" class="fadeout_2_2">
+                        <div class="span2">
+                            <a href="https://www.facebook.com/DigitalFortressNSITInnovision/app/202980683107053/">Forum</a>
+                        </div>
                     </div>
-                </div>
-                <!-- FORUM-->
-                <div id="part3" class="fadeout_2_2">        
-                    <div class="span2">
-                        <a href="https://www.facebook.com/DigitalFortressNSITInnovision/app/202980683107053/">Forum</a>
-                    </div>
-                </div>
                 </div>
             </div>
             </div> 
