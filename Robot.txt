@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /digitalfortress_pass_some_random_text.txt

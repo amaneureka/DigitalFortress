@@ -212,7 +212,7 @@ $(document).ready(function(){
 			case "finished":
 				$this.fadeOut();
 				setTimeout ( function () { //if you want add a text
-					$this.text("The countdown is ended!");
+					$this.text("Get set go!");
 					$this.fadeIn();
 				},1500 );
 				break;

@@ -47,10 +47,10 @@ if (isset($session)) {
         db_query("INSERT INTO users VALUES(NULL, '" . $fbfullname . "', '" . $fbid . "', '" . $femail . "', 'NULL', 0, 0);");
 
         //swagat karo user kar :D !
-        header("Location: landing.php?welcome");
+        header("Location: index.php?welcome");
     }
     else
-        header("Location: landing.php");
+        header("Location: index.php");
     
 } else {
   $loginUrl = $helper->getLoginUrl();

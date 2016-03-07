@@ -1,5 +1,24 @@
 <?php
 session_start();
+if (!$_SESSION['FBID'])
+    header("location index.php");
+if ($_SESSION['FBID'] && isset($_GET['answer']))
+{
+    db_connection();
+    $result = db_query("SELECT * FROM users WHERE fbid='" . $_SESSION['FBID'] . "'");
+
+    $level = 0;
+    if (mysqli_num_rows($result))
+    {
+        $row = $result->fetch_array(MYSQLI_ASSOC);
+        $level = $row['lvl'];
+    }
+    $date = new DateTime();
+    if ($level == 4 && ($_GET['answer'] == ($date->getTimestamp() + 10)))
+    {
+        db_query("UPDATE users SET lvl=5,score=150 WHERE fbid='" . $_SESSION['FBID'] . "'");
+    }
+}
 ?>
 <!DOCTYPE html>
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->

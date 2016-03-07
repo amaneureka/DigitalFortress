@@ -1,0 +1,41 @@
+function evalPass() {
+	var done = false;
+	var ans = document.regex_.test_.value
+	var reg = new RegExp("^[A-Za-z0-9]{5}");
+	var exec_ = reg.exec(ans);
+	if (exec_ != null) {
+		reg = new RegExp("^[^e-z0-9A-Z]+[^A-Z]{4}{?[a-z]*_?");
+		exec_ = reg.exec(ans);
+		if (exec_ != null) {
+			reg = new RegExp("^[A9FbdHh5]+[T]*.{2}_?[a-z]+");
+			exec_ = reg.exec(ans);
+			if (exec_ != null) {
+				reg = new RegExp("^[^YdSeu][r]+[^r]+=?_?[aeiou]+[^pstuvwxyz]+");
+				exec_ = reg.exec(ans);
+				if (exec_ != null) {
+					reg = new RegExp("^(c|a|b|d)+[^A-Za-df-qs-z]{2}{?[^vCXBhq]*[^pqrst]*[a]+[^passwd]*}?");
+					exec_ = reg.exec(ans);
+					if (exec_ != null) {
+						reg = new RegExp("^.*[k0pst]$");
+						exec_ = reg.exec(ans);
+						if (exec_ != null) {
+							reg = new RegExp("^[^0-9A-Z]{5}$");
+							exec_ = reg.exec(ans);
+							if (exec_ != null) {
+								var url = exec_[0];
+								if (url == ans) {
+									alert('Good Job, enter that as the mission password');
+									done = true;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	if (done == false)
+	{
+		alert('Sorry, wrong password');
+	}
+}
