@@ -74,6 +74,8 @@ class DigitalFortress
             return ("You are trying to get access of your friend's computer, It says please enter 10 digit password");
         else if ($level == 7)
             return ("You are trying to gain access into pentagon network, but seems like they have password key encrpted several times\nPassword: /question/tmp7546789.txt \nHint: Password contains only digits!");
+        else if ($level == 8)
+            return ("Pentagon network in on the way! You have successfully accessed the vault but it is locked\nVault a software running on Linux distro, whenever you enter password it checks if your password is correct (believe me you can't hack this algorithm)\n1. Correct password := It opens (creates if does not exist) and write '0' in file HTTP_RESPONSE.JSON and then send it to the server\n2. Incorrect password := It simply send error report to server.\nYou have shell access in sandboxed environment, You could create FS entries only! Come up with a single line linux command to hack this system and send 0 to server.\nAssume You can't access server info, sandbox hijacking is not possible.");
         else
             return ("We are in progress of cooking more questions for you!");
     }
@@ -137,7 +139,16 @@ class DigitalFortress
                 db_query("UPDATE users SET lvl=8,score=360 WHERE fbid='" . $_SESSION['FBID'] . "'");
                 return ("true");
             }
-            throw new Exception("Wrong Answer!");       
+            throw new Exception("Wrong Answer!");
+        }
+        else if ($level == 8)
+        {
+            if ($answer == "ln -s HTTP_RESPONSE.JSON /dev/null")
+            {
+                db_query("UPDATE users SET lvl=9,score=450 WHERE fbid='" . $_SESSION['FBID'] . "'");
+                return ("true");   
+            }
+            throw new Exception("Wrong Answer!");
         }
     }
 }

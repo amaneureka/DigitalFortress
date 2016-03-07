@@ -88,9 +88,14 @@ require_once 'connection.php';
     					if (mysqli_num_rows($result))
     					{
     						$rank = 0;
+                            $lastscore = 0;
     						while($row = mysqli_fetch_array($result,MYSQLI_ASSOC))
     						{
-    							++$rank;
+                                if ($row['score'] != $lastscore)
+                                {
+    							     ++$rank;
+                                     $lastscore = $row['score'];
+                                }
     							echo "<tr>";
     							echo "<td>" . $rank . "</td>";
     							echo "<td>" . $row['name'] . "</td>";
