@@ -26,9 +26,7 @@ class DigitalFortress
     {
         global $level;
         if ($level == 0)
-        {
             return ("First Level is pretty simple, You just have to update profile by calling 'uprofile' method! 'Command: METHOD_NAME [help|Args]'");
-        }
         else
             return ("uprofile := Update your profile\nwhoami := Information about user\nquestion := Question related stuffs\nsubmit := To Submit answer!");
     }
@@ -47,9 +45,34 @@ class DigitalFortress
     {
         global $score, $level;
         return array("Name" => $_SESSION['FULLNAME'],
-                 "Email ID" => $_SESSION['EMAIL'],
+                 "ID" => $_SESSION['FBID'],
                  "Score" => $score,
                  "Level" => $level);
+    }
+
+    public function hint()
+    {
+        global $level;
+        if ($level == 0)
+            return ("No Hints :p");
+        else if ($level == 1)
+            return ("It's a standard encryption method");
+        else if ($level == 2)
+            return ("Admin loves cookie!");
+        else if ($level == 3)
+            return ("RegEx it is! Either crack or exploit.");
+        else if ($level == 4)
+            return ("Only time can save you!");
+        else if ($level == 5)
+            return ("Password is stored in plain text on server!");
+        else if ($level == 6)
+            return ("Sometimes you don't have to follow the rules given in instructions.");
+        else if ($level == 7)
+            return ("Recursion! huh!");
+        else if ($level == 8)
+            return ("You can use symlink to fool the sandbox!");
+        else
+            return ("No hints for now");
     }
 
     public function question()
@@ -75,9 +98,48 @@ class DigitalFortress
         else if ($level == 7)
             return ("You are trying to gain access into pentagon network, but seems like they have password key encrpted several times\nPassword: /question/tmp7546789.txt \nHint: Password contains only digits!");
         else if ($level == 8)
-            return ("Pentagon network in on the way! You have successfully accessed the vault but it is locked\nVault a software running on Linux distro, whenever you enter password it checks if your password is correct (believe me you can't hack this algorithm)\n1. Correct password := It opens (creates if does not exist) and write '0' in file HTTP_RESPONSE.JSON and then send it to the server\n2. Incorrect password := It simply send error report to server.\nYou have shell access in sandboxed environment, You could create FS entries only! Come up with a single line linux command to hack this system and send 0 to server.\nAssume You can't access server info, sandbox hijacking is not possible.");
+            return ("Pentagon network in on the way! You have successfully accessed the vault but it is locked\nVault a software running on Linux distro, whenever you enter password it checks if your password is correct (believe me you can't hack this algorithm)\n1. Correct password := It opens (creates if does not exist) and write '0' in file HTTP_RESPONSE.JSON and then send it to the server\n2. Incorrect password := It simply send error report to server.\nYou have shell access in sandboxed environment, You could create FS entries only! Come up with a single line linux command to hack this system and send empty file to server.\nAssume You can't access server info, sandbox hijacking is not possible.");
+        else if ($level == 9)
+            return ("Play with 'admin' method");
         else
             return ("We are in progress of cooking more questions for you!");
+    }
+
+    public function admin($arg1, $arg2)
+    {
+        global $level;
+        if ($level == 9)
+        {
+            if ($arg1 != $_SESSION['FBID'])
+                throw new Exception("Your arg1 should be your facebook profile id.");
+            if ($arg2 == md5($arg1))
+                throw new Exception("Invalid entry found at 'arg2', " . $arg2 . " != " . md5($arg1));
+            return ("Your token '" . md5($arg1 . "iamadmin") . "'\nuse 'foo <FBID> <token> <function>' to access panel.\n Use 'help' as function");
+        }
+        else
+            throw new Exception("Command 'admin' Not Found!");
+    }
+
+    public function foo($arg1, $arg2, $agr3)
+    {
+        if ($arg2 != md5($arg1 . "iamadmin"))
+            throw new Exception("Invalid access token.");
+        if ($agr3 == "help")
+            return ("getfile := download file\ngethash := get Your session hash\nYou can submit your answer as third argument");
+        else if ($agr3 == "gethash")
+            return md5($arg2 . "iamidiot");
+        else if ($agr3 == "getfile")
+            return ("(Windows Binary) Run it as, question/crack.exe <token> <hash> <password>");
+        else
+        {
+            $hash = md5($arg2 . "iamidiot") . "abc";
+            if ($agr3 == strrev($hash))
+            {
+                db_query("UPDATE users SET lvl=10,score=550 WHERE fbid='" . $_SESSION['FBID'] . "'");
+                return ("Correct Answer!");
+            }
+            throw new Exception("Unknow command!");
+        }
     }
 
     public function submit($answer)
@@ -149,6 +211,10 @@ class DigitalFortress
                 return ("true");   
             }
             throw new Exception("Wrong Answer!");
+        }
+        else if ($level == 9)
+        {
+            throw new Exception("Play with admin method only");
         }
     }
 }
