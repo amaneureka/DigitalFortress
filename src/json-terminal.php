@@ -24,6 +24,8 @@ class DigitalFortress
 {
     public function help()
     {
+        throw new Exception("Contest is over!");
+
         global $level;
         if ($level == 0)
             return ("First Level is pretty simple, You just have to update profile by calling 'uprofile' method! 'Command: METHOD_NAME [help|Args]'");
@@ -33,6 +35,8 @@ class DigitalFortress
 
     public function uprofile($inno_id)
     {
+        throw new Exception("Contest is over!");
+        
         global $level;
         if ($inno_id == "help")
             return ("uprofile <YOUR_INNO_ID>");
@@ -43,6 +47,8 @@ class DigitalFortress
 
     public function whoami()
     {
+        throw new Exception("Contest is over!");
+
         global $score, $level;
         return array("Name" => $_SESSION['FULLNAME'],
                  "ID" => $_SESSION['FBID'],
@@ -52,6 +58,8 @@ class DigitalFortress
 
     public function hint()
     {
+        throw new Exception("Contest is over!");
+
         global $level;
         if ($level == 0)
             return ("No Hints :p");
@@ -77,6 +85,7 @@ class DigitalFortress
 
     public function question()
     {
+        throw new Exception("Contest is over!");
         global $level;
         if ($level == 0)
             return ("Are you kidding?");
@@ -107,6 +116,7 @@ class DigitalFortress
 
     public function admin($arg1, $arg2)
     {
+        throw new Exception("Contest is over!");
         global $level;
         if ($level == 9)
         {
@@ -122,6 +132,7 @@ class DigitalFortress
 
     public function foo($arg1, $arg2, $agr3)
     {
+        throw new Exception("Contest is over!");
         if ($arg2 != md5($arg1 . "iamadmin"))
             throw new Exception("Invalid access token.");
         if ($agr3 == "help")
@@ -144,6 +155,8 @@ class DigitalFortress
 
     public function submit($answer)
     {
+        throw new Exception("Contest is over!");
+        
         global $level;
         if ($level == 1)
         {
